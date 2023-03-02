@@ -22,6 +22,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -111,6 +112,15 @@ To run tests, run the following command:
 - Twitter: [@twitterhandle](https://twitter.com/kerroum_youssef)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ykerroum/)
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Validations and Model specs**
+- [ ] **Processing data in models**
+- [ ] **Setup and controllers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
