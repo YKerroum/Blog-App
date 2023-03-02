@@ -80,7 +80,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd my-project
+  cd Blog-App
   gem install
 ```
 
