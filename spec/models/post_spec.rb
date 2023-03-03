@@ -4,17 +4,17 @@ RSpec.describe Post, type: :model do
   context 'validations' do
     it 'title should not be too long' do
       post = Post.new(title: 'a' * 1001)
-      expect(post.valid?).to eq(false)
+      expect(post).to_not be_valid
     end
 
     it 'comments counter should be an integer greater than or equal to 0' do
       post = Post.new(comments_counter: -1)
-      expect(post.valid?).to eq(false)
+      expect(post).to_not be_valid
     end
 
     it 'likes counter should be an integer greater than or equal to 0' do
       post = Post.new(likes_counter: -1)
-      expect(post.valid?).to eq(false)
+      expect(post).to_not be_valid
     end
 
     it 'should update author posts counter after create, destroy, and update' do

@@ -5,17 +5,17 @@ RSpec.describe User, type: :model do
   context 'validations' do
     it 'name should be present' do
       user = User.new(name: nil)
-      expect(user.valid?).to eq(false)
+      expect(user).to_not be_valid
     end
 
     it 'posts counter should be a number' do
       user = User.new(posts_counter: 'string')
-      expect(user.valid?).to eq(false)
+      expect(user).to_not be_valid
     end
 
     it 'posts counter should be greater than or equal to 0' do
       user = User.new(posts_counter: -1)
-      expect(user.valid?).to eq(false)
+      expect(user).to_not be_valid
     end
   end
 
