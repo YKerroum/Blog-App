@@ -22,12 +22,12 @@ RSpec.describe User, type: :model do
   context 'associations and methods' do
     it 'three recent posts should return the most recent three posts' do
       user = User.create(name: 'User 1')
-      Post.create(author: user, title: 'Post 1', content: 'Content 1')
-      post2 = Post.create(author: user, title: 'Post 2', content: 'Content 2')
-      post3 = Post.create(author: user, title: 'Post 3', content: 'Content 3')
-      post4 = Post.create(author: user, title: 'Post 4', content: 'Content 4')
+      Post.create(author: user, title: 'Post 1', text: 'Content 1')
+      post2 = Post.create(author: user, title: 'Post 2', text: 'Content 2')
+      post3 = Post.create(author: user, title: 'Post 3', text: 'Content 3')
+      post4 = Post.create(author: user, title: 'Post 4', text: 'Content 4')
 
-      expect(user.three_recent_posts).to_be [post4, post3, post2]
+      expect(user.three_recent_posts).to eq [post4, post3, post2]
     end
   end
 end
