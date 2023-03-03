@@ -13,4 +13,8 @@ class User < ApplicationRecord
     has_many :likes,
         foreign_key: :author_id,
         class_name: :Like
+
+    def three_recent_posts
+        self.posts.order(created_at: :desc).limit(3)
+    end
 end
