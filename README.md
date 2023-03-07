@@ -53,6 +53,13 @@
   </ul>
 </details>
 
+<details>
+  <summary>Testing</summary>
+  <ul>
+    <li><a href="https://github.com/rspec/rspec-rails">RSpec</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
