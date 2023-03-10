@@ -1,5 +1,5 @@
 <%= render @user %>
 <% @user.three_recent_posts.each_with_index do |post, i| %>
-  <%= render partial: 'posts/post', locals: { post: post, index: i} %>
+  <%= render partial: 'posts/post', locals: { post: post} %>
   <%= render partial: 'comments/comment', locals: {user_name: @user.name, comments: post.five_recent_comments}%>
 <% end %>
