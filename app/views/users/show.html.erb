@@ -9,4 +9,4 @@
   <%= render partial: 'posts/post', locals: { post: post, index: i} %>
 <% end %>
 
-<button> <%= link_to 'See all posts', user_posts_path(@user) %> </button>
+<button class="see_all_posts_btn"> <%= link_to 'See all posts', user_posts_path(@user) %> </button>
